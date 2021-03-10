@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mgn.mvp.components.LoadView
+        android:id="@+id/loadView"
+        android:layout_centerInParent="true"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:hint="password"
+        android:layout_above="@+id/loadView"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edit_username"
+        android:hint="username"
+        android:layout_above="@+id/edit_password"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/button"
+        android:text="开始"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/loadView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
